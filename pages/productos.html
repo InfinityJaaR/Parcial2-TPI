@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../src/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="bg-gray-800 p-4 text-white">
+    <div class="max-w-6xl mx-auto flex justify-between">
+      <div class="text-2xl font-bold">Mi Tienda</div>
+      <ul class="flex space-x-4">
+        <li><a href="../index.html" class="hover:text-gray-400">Inicio</a></li>
+        <li><a href="./conocenos.html" class="hover:text-gray-400">Conocenos</a></li>
+        <li><a href="./contactanos.html" class="hover:text-gray-400">Contáctanos</a></li>
+        <li><a href="./recetario.html" class="hover:text-gray-400">Recetario</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenedor de productos -->
+  <section class="max-w-6xl mx-auto p-6">
+    <h1 class="text-4xl font-bold mb-4">Nuestros Productos</h1>
+    <div id="product-list" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../src/js/productos.js"></script>
+</body>
+
+</html>
