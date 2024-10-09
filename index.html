@@ -13,17 +13,15 @@
 
     <body class="bg-gray-100">
         <!-- Navbar -->
-        <nav class="bg-gray-800 p-4 text-white">
-            <div class="max-w-6xl mx-auto flex justify-between">
-                <div class="text-2xl font-bold">Mi Tienda</div>
-                <ul class="flex space-x-4">
-                    <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
-                    <li><a href="./pages/conocenos.html" class="hover:text-gray-400">Conocenos</a></li>
-                    <li><a href="./pages/contactanos.html" class="hover:text-gray-400">Contáctanos</a></li>
-                    <li><a href="./pages/recetario.html" class="hover:text-gray-400">Recetario</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="nav-container"></div>
+
+        <script>
+            fetch('./src/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-container').innerHTML = data;
+            });
+         </script>
         <!-- Presentación -->
         <header class="bg-blue-500 text-white p-6">
             <h1 class="text-4xl font-bold">Bienvenidos a Nuestra Tienda</h1>
@@ -97,5 +95,5 @@
             <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
         </footer>
     </body>
-
+    <script src="../src/js/tawk.js"></script>
 </html>
