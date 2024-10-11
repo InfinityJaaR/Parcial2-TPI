@@ -6,91 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queiques</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">  
-</head>
-    <body class="bg-gray-100">
-        <!-- Navbar -->
-        <div id="nav-container"></div>
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
 
-        <script>
-            fetch('./src/nav.html')
+    <!-- Verificacion por parte de Google Search Console -->
+    <meta name="google-site-verification" content="ISNBkPu0tytmiVV394wyX8SC-2x1RHG8cy5T10A4I9s" />
+    <!-- Google tag  (gtag.js) por parte de Google Analitycs -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-23XES6N3T0"></script>
+    <script src="./src/js/gtag.js"></script>
+</head>
+
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <div id="nav-container"></div>
+
+    <script>
+        fetch('./src/nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-container').innerHTML = data;
             });
-         </script>
-        <!-- Presentación -->
-        <header class="bg-blue-500 text-white p-6">
-            <h1 class="text-4xl font-bold">Bienvenidos a Nuestra Tienda</h1>
-            <p class="mt-2">Los mejores productos, justo aquí.</p>
-        </header>
+    </script>
+    <!-- Presentación -->
+    <header class="bg-blue-500 text-white p-6">
+        <h1 class="text-4xl font-bold">Bienvenidos a Nuestra Tienda</h1>
+        <p class="mt-2">Los mejores productos, justo aquí.</p>
+    </header>
 
-        <!-- Productos Destacados -->
-        <section class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-bold mb-4">Productos Destacados</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Producto 1 -->
-                <div class="border p-4 rounded">
-                    <img src="./src/img/favicon.png" alt="Producto 1" class="mb-4">
-                    <h3 class="text-xl">Producto 1</h3>
-                    <p class="text-gray-600">$10.00</p>   
-                </div>
-                <!-- Producto 2 -->
-                <div class="border p-4 rounded">
-                    <img src="./src/img/favicon.png" alt="Producto 2" class="mb-4">
-                    <h3 class="text-xl">Producto 2</h3>
-                    <p class="text-gray-600">$20.00</p>
-                </div>
-                <!-- Producto 3 -->
-                <div class="border p-4 rounded">
-                    <img src="./src/img/favicon.png" alt="Producto 3" class="mb-4">
-                    <h3 class="text-xl">Producto 3</h3>
-                    <p class="text-gray-600">$30.00</p>
-                </div>
-                <a href="./pages/productos.html">
-                    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Ver Más</button>
-                </a>  
+    <!-- Productos Destacados -->
+    <section class="max-w-6xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Productos Destacados</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Producto 1 -->
+            <div class="border p-4 rounded">
+                <img src="./src/img/favicon.png" alt="Producto 1" class="mb-4">
+                <h3 class="text-xl">Producto 1</h3>
+                <p class="text-gray-600">$10.00</p>
             </div>
-        </section>
-
-        <!-- Nuestros Servicios -->
-        <section class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-bold mb-4">Nuestros Servicios</h2>
-            <details class="mb-4">
-                <summary class="cursor-pointer text-blue-500">Servicio 1</summary>
-                <p class="mt-2 text-gray-600">Descripción del servicio 1.</p>
-            </details>
-            <details>
-                <summary class="cursor-pointer text-blue-500">Servicio 2</summary>
-                <p class="mt-2 text-gray-600">Descripción del servicio 2.</p>
-            </details>
-        </section>
-
-        <!-- Sobre la Marca -->
-        <section class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-bold mb-4">Sobre Nuestra Marca</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <img src="marca.jpg" alt="Sobre la Marca" class="rounded">
-                <p class="text-gray-600">Somos una empresa dedicada a...</p>
+            <!-- Producto 2 -->
+            <div class="border p-4 rounded">
+                <img src="./src/img/favicon.png" alt="Producto 2" class="mb-4">
+                <h3 class="text-xl">Producto 2</h3>
+                <p class="text-gray-600">$20.00</p>
             </div>
-            <a href="./pages/conocenos.html">
-                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Saber Más</button>
-            </a>       
-        </section>
-
-        <!-- Redes Sociales -->
-        <section class="bg-blue-500 text-white p-6">
-            <h2 class="text-2xl font-bold">Síguenos en Redes Sociales</h2>
-            <div class="flex justify-around mt-4">
-                <a href="https://facebook.com" class="bg-white text-blue-500 px-4 py-2 rounded">Facebook</a>
-                <a href="https://instagram.com" class="bg-white text-blue-500 px-4 py-2 rounded">Instagram</a>
+            <!-- Producto 3 -->
+            <div class="border p-4 rounded">
+                <img src="./src/img/favicon.png" alt="Producto 3" class="mb-4">
+                <h3 class="text-xl">Producto 3</h3>
+                <p class="text-gray-600">$30.00</p>
             </div>
-        </section>
+            <a href="./pages/productos.html">
+                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Ver Más</button>
+            </a>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="bg-gray-800 text-white text-center p-4">
-            <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
-        </footer>
-    </body>
-    <script src="../src/js/tawk.js"></script>
+    <!-- Nuestros Servicios -->
+    <section class="max-w-6xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Nuestros Servicios</h2>
+        <details class="mb-4">
+            <summary class="cursor-pointer text-blue-500">Servicio 1</summary>
+            <p class="mt-2 text-gray-600">Descripción del servicio 1.</p>
+        </details>
+        <details>
+            <summary class="cursor-pointer text-blue-500">Servicio 2</summary>
+            <p class="mt-2 text-gray-600">Descripción del servicio 2.</p>
+        </details>
+    </section>
+
+    <!-- Sobre la Marca -->
+    <section class="max-w-6xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Sobre Nuestra Marca</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="marca.jpg" alt="Sobre la Marca" class="rounded">
+            <p class="text-gray-600">Somos una empresa dedicada a...</p>
+        </div>
+        <a href="./pages/conocenos.html">
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Saber Más</button>
+        </a>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="bg-blue-500 text-white p-6">
+        <h2 class="text-2xl font-bold">Síguenos en Redes Sociales</h2>
+        <div class="flex justify-around mt-4">
+            <a href="https://facebook.com" class="bg-white text-blue-500 px-4 py-2 rounded">Facebook</a>
+            <a href="https://instagram.com" class="bg-white text-blue-500 px-4 py-2 rounded">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script src="../src/js/tawk.js"></script>
+
 </html>
