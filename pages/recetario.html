@@ -3,61 +3,161 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Descubre deliciosas recetas de pasteles y postres, explicadas paso a paso.">
+  <meta name="keywords" content="recetas, pasteles, postres, recetas fáciles, dulces">
+  <meta name="author" content="Queiques">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recetario</title>
+  <title>Queiques</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../styles/recetas.css">
   <link rel="shortcut icon" href="../src/img/favicon.png" type="image/x-icon">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Recipe",
+      "name": "Tarta de Chocolate",
+      "description": "Una receta fácil y deliciosa de tarta de chocolate. Sigue el video para prepararla paso a paso.",
+      "author": {
+        "@type": "Person",
+        "name": "Queiques"
+      },
+      "video": {
+        "@type": "VideoObject",
+        "name": "Cómo hacer Tarta de Chocolate",
+        "description": "Aprende a hacer una deliciosa tarta de chocolate en este video fácil de seguir.",
+        "thumbnailUrl": "https://img.youtube.com/vi/ID_DEL_VIDEO/maxresdefault.jpg",
+        "uploadDate": "2024-10-07",
+        "contentUrl": "https://www.youtube.com/watch?v=IhHvlHTottI",
+        "embedUrl": "https://www.youtube.com/embed/IhHvlHTottI?si=a-vn1dehGwyyfxTt",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Recetas Nestlé",
+        },
+      },
+      "datePublished": "2024-09-10"
+    }
+    </script>
 </head>
 
-<body>
+<body class="bg-gray-100">
+
   <!-- Navbar -->
   <div id="nav-container"></div>
 
   <script>
-      fetch('.././src/nav.html')
+    fetch('.././src/nav.html')
       .then(response => response.text())
       .then(data => {
-          document.getElementById('nav-container').innerHTML = data;
+        document.getElementById('nav-container').innerHTML = data;
       });
-   </script>
+  </script>
 
-  <!-- Recetario con enlaces a YouTube -->
-  <section class="max-w-6xl mx-auto p-6">
-    <h1 class="text-4xl font-bold mb-4">Recetario</h1>
-    <p class="text-gray-600">Aquí te dejamos algunas recetas con videos:</p>
-    <ul class="list-disc ml-6">
-      <li><a href="https://youtube.com/receta1" class="text-blue-500">Receta 1</a></li>
-      <li><a href="https://youtube.com/receta2" class="text-blue-500">Receta 2</a></li>
-    </ul>
-  </section>
-
-  <!-- Conoce a tu Instructor -->
-  <section class="max-w-6xl mx-auto p-6">
-    <h2 class="text-2xl font-bold mb-4">Conoce a tu Instructor</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <img src="instructor.jpg" alt="Instructor" class="rounded">
-      <p class="text-gray-600">Nuestro instructor es un chef con más de 10 años de experiencia...</p>
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('../src/img/recetas.png');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay oscuro -->
+    
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+      <h1 class="text-6xl font-bold mb-4">Recetas Queique</h1>
+      <p class="text-lg mb-8">¡Bienvenidos a nuestro rincón de queiues y risas! Sumérgete en una experiencia única, donde podrás aprender sobre recetas de postres deliciosos.</p>
+      <a href="#recetas" class="bg-white text-gray-800 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 ease-in-out">LEER MÁS</a>
     </div>
   </section>
 
-  <!-- Preguntas Frecuentes -->
-  <section class="max-w-6xl mx-auto p-6">
-    <h2 class="text-2xl font-bold mb-4">Preguntas Frecuentes</h2>
-    <details class="mb-4">
-      <summary class="cursor-pointer text-blue-500">¿Cómo puedo inscribirme?</summary>
-      <p class="mt-2 text-gray-600">Puedes inscribirte directamente en nuestra página web...</p>
-    </details>
-    <details>
-      <summary class="cursor-pointer text-blue-500">¿Cuáles son los requisitos?</summary>
-      <p class="mt-2 text-gray-600">No se requieren conocimientos previos, solo ganas de aprender.</p>
-    </details>
+  <!-- Recetario con Cards de Recetas -->
+  <section id="recetas" class="max-w-6xl mx-auto p-6 mt-10">
+    <h1 class="text-4xl font-bold mb-4 text-center">Recetario</h1>
+    <p class="text-gray-600 mb-6 text-center">Conoce más sobre algunas de las recetas que te recomendamos</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card de Receta 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-2">Receta 1: Donas de Chocolate</h2>
+        <p class="text-gray-600 mb-4">Deliciosas donas de chocolate esponjosas, fáciles de hacer.</p>
+        <div class="aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/W1EorOMsZ-I?si=W10jLVXSQU1_vbMm" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="liking flex justify-start mt-4">
+            <i class="far fa-thumbs-up like-icon"></i>
+            <i class="far fa-thumbs-down dislike-icon"></i>
+        </div>
+    </div>
+    
+
+      <!-- Card de Receta 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-2">Receta 2: Galletas de Vainilla</h2>
+        <p class="text-gray-600 mb-4">Crujientes galletas de vainilla con un toque de canela.</p>
+        <div class="aspect-w-16 aspect-h-9 ">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/wT0M5H3AT3E?si=ntLwQmt6v_1TQxxi" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="liking flex justify-start mt-4">
+          <i class="far fa-thumbs-up like-icon"></i>
+          <i class="far fa-thumbs-down dislike-icon"></i>
+      </div>
+      </div>
+
+      <!-- Card de Receta 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-2">Receta 3: Pan francés</h2>
+        <p class="text-gray-600 mb-4">Pan francés esponjoso y dulce, aconpañado con fruta</p>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/GCV2r8sy4Vs?si=eG6-UdGm-HfMUycQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="liking flex justify-start mt-4">
+          <i class="far fa-thumbs-up like-icon"></i>
+          <i class="far fa-thumbs-down dislike-icon"></i>
+        </div>
+      </div>
+
+      <!-- Card de Receta 4 -->
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-2">Receta 4: Cupcakes</h2>
+        <p class="text-gray-600 mb-4">Delicioso cupcakes rellenos de franbuesa, perfectos para cualquier ocasión</p>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/MYKnM3eZhfY?si=3RozKXOvcUeIAmcP" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="liking flex justify-start mt-4">
+          <i class="far fa-thumbs-up like-icon"></i>
+          <i class="far fa-thumbs-down dislike-icon"></i>
+        </div>
+      </div>
+
+      <!-- Card de Receta 5 -->
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-2">Receta 5: Profiteroles</h2>
+        <p class="text-gray-600 mb-4">Prácticos y exquisitos profiteroles ideales como postre</p>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/FoA6CT-b-r4?si=S_CmCQsRGe7Tw4OB" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="liking flex justify-start mt-4">
+          <i class="far fa-thumbs-up like-icon"></i>
+          <i class="far fa-thumbs-down dislike-icon"></i>
+        </div>
+      </div>
+
+      <!-- Card de Receta 6 -->
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-2">Receta 6: Panqué</h2>
+        <p class="text-gray-600 mb-4">Panqué temático de corazón, perfecto para un ser querido</p>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/Xx9NHepLG_E?si=jwI1ti-tXGNTErSc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="liking flex justify-start mt-4">
+          <i class="far fa-thumbs-up like-icon"></i>
+          <i class="far fa-thumbs-down dislike-icon"></i>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center p-4">
-    <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    <p>&copy; 2024 Queiques Coffe. Todos los derechos reservados.</p>
   </footer>
 
 </body>
 <script src="../src/js/tawk.js"></script>
 </html>
+
