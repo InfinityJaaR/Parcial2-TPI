@@ -1,11 +1,12 @@
 const productos = [
-    { nombre: 'Producto 1', precio: 10.00, imagen: '../src/img/favicon.png', descripcion: 'Descripción del producto 1' },
-    { nombre: 'Producto 2', precio: 20.00, imagen: '../src/img/obj1.jpg', descripcion: 'Descripción del producto 2' },
-    { nombre: 'Producto 3', precio: 30.00, imagen: '../src/img/obj2.jpg', descripcion: 'Descripción del producto 3' },
-    { nombre: 'Producto 4', precio: 40.00, imagen: '../src/img/favicon.png', descripcion: 'Descripción del producto 4' },
-    { nombre: 'Producto 5', precio: 50.00, imagen: '../src/img/obj1.jpg', descripcion: 'Descripción del producto 5' },
-    { nombre: 'Producto 6', precio: 60.00, imagen: '../src/img/obj+1.jpg', descripcion: 'Descripción del producto 6' }
-  ];
+  { nombre: 'Bocadillos', precio: 10.00, imagen: '../src/img/queiques/bocadillos.png', descripcion: 'Deliciosos bocadillos variados.' },
+  { nombre: 'Cheesecake', precio: 20.00, imagen: '../src/img/queiques/chesecake.png', descripcion: 'Suave y cremoso cheesecake.' },
+  { nombre: 'Pan Dulce', precio: 30.00, imagen: '../src/img/queiques/pan-dulce.png', descripcion: 'Tradicional pan dulce esponjoso.' },
+  { nombre: 'Pastel Capuccino', precio: 40.00, imagen: '../src/img/queiques/pastel-capucino.png', descripcion: 'Exquisito pastel con sabor a capuccino.' },
+  { nombre: 'Pastel de Chocolate', precio: 50.00, imagen: '../src/img/queiques/pastel-chocolate.png', descripcion: 'Irresistible pastel de chocolate.' },
+  { nombre: 'Pastel Personalizado', precio: 60.00, imagen: '../src/img/queiques/personalizado.png', descripcion: 'Personaliza tu pastel a tu gusto.' },
+  { nombre: 'Torta', precio: 60.00, imagen: '../src/img/queiques/torta.png', descripcion: 'Clásica torta para toda ocasión.' }
+];
 
   // Función para generar la lista de productos
   function generarProductos() {
