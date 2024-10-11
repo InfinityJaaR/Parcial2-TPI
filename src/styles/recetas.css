@@ -1,0 +1,25 @@
+
+html {
+    scroll-behavior:smooth;
+}
+
+.liking {
+    display: flex;
+    justify-content: start; /* Orientar hacia el lado izquierdo */
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.like-icon, .dislike-icon {
+    font-size: 27px; /* Tamaño del ícono */
+    color: #ccc; /* Color de la silueta inicial */
+    cursor: pointer;
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.like-icon:active {
+    color: #007bff; /* Color azul al hacer hover o clic (like) */
+}
+
+.dislike-icon:active {
+    color: #dc3545; /* Color rojo al hacer hover o clic (dislike) */
+}
