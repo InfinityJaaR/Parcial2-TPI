@@ -1,106 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Queiques</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../src/styles/style.css" />
+    
+        <!-- Verificacion por parte de Google Search Console -->
+        <meta
+          name="google-site-verification"
+          content="ISNBkPu0tytmiVV394wyX8SC-2x1RHG8cy5T10A4I9s"
+        />
+        <!-- Google tag  (gtag.js) por parte de Google Analitycs -->
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-23XES6N3T0"
+        ></script>
+        <script src="./src/js/gtag.js"></script>
+    
+        <!-- Script para inicializar la biblioteca AOS (Animate On Scroll) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <!-- Hoja de estilos para las animaciones de AOS (Animate On Scroll) -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queiques</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../src/styles/style.css">
-
-    <!-- Verificacion por parte de Google Search Console -->
-    <meta name="google-site-verification" content="ISNBkPu0tytmiVV394wyX8SC-2x1RHG8cy5T10A4I9s" />
-    <!-- Google tag  (gtag.js) por parte de Google Analitycs -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-23XES6N3T0"></script>
-    <script src="./src/js/gtag.js"></script>
-</head>
-
-
-<body class="bg-gray-100">
+  <body class="bg-gray-100">
     <!-- Navbar -->
     <div id="nav-container"></div>
 
     <script>
-        fetch('./src/nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-container').innerHTML = data;
-            });
+      fetch("./src/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-container").innerHTML = data;
+        });
     </script>
     <!-- Presentación -->
-    <header class="bg-1c1c1c text-white p-6">
-        <h1 class="text-4xl font-bold">Bienvenidos a Nuestra Tienda</h1>
-        <p class="mt-2">Los mejores productos, justo aquí.</p>
-    </header>
+    <section class="relative bg-1c1c1c text-white py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h1 class="text-5xl font-bold mb-4 text-center" data-aos="fade-up">
+          Bienvenidos a Queiques
+        </h1>
+        <p
+          class="text-xl text-center mb-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Donde el café se encuentra con la dulzura
+        </p>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-100 to-transparent"
+      ></div>
+    </section>
 
     <!-- Productos Destacados -->
-    <section class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Productos Destacados</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Producto 1 -->
-            <div class="border p-4 rounded">
-                <img src="./src/img/queiques/bocadillos.png" alt="Producto 1" class="mb-4">
-                <h3 class="text-xl">Producto 1</h3>
-                <p class="text-gray-600">$10.00</p>
-            </div>
-            <!-- Producto 2 -->
-            <div class="border p-4 rounded">
-                <img src="./src/img/cafe/cafe1.png" alt="Producto 2" class="mb-4">
-                <h3 class="text-xl">Producto 2</h3>
-                <p class="text-gray-600">$20.00</p>
-            </div>
-            <!-- Producto 3 -->
-            <div class="border p-4 rounded">
-                <img src="./src/img/queiques/pastel-capucino.png" alt="Producto 3" class="mb-4">
-                <h3 class="text-xl">Producto 3</h3>
-                <p class="text-gray-600">$30.00</p>
-            </div>
-            <a href="./pages/productos.html">
-                <button class="mt-2 bg-1c1c1c text-white px-4 py-2 rounded">Ver Más</button>
-            </a>
+    <section
+      class="max-w-6xl mx-auto p-6"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-center">Productos Destacados</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Producto 1 -->
+        <div class="p-4 rounded shadow-md hover:shadow-xl bg-white">
+          <img
+            src="./src/img/queiques/bocadillos.png "
+            alt="Bocadillos"
+            class="mb-4 w-full h-48 rounded"
+          />
+          <h3 class="text-xl font-bold">Bocadillos</h3>
+          <p class="text-gray-600 mb-2">Deliciosos bocadillos variados.</p>
+          <p class="text-gray-800 font-semibold">$10.00</p>
         </div>
+        <!-- Producto 2 -->
+        <div class="p-4 rounded shadow-md hover:shadow-xl bg-white">
+          <img
+            src="./src/img/cafe/cafe1.png"
+            alt="Bocadillos"
+            class="mb-4 w-full h-48 rounded"
+          />
+          <h3 class="text-xl font-bold">Bocadillos</h3>
+          <p class="text-gray-600 mb-2">Deliciosos bocadillos variados.</p>
+          <p class="text-gray-800 font-semibold">$10.00</p>
+        </div>
+        <!-- Producto 3 -->
+        <div class="p-4 rounded shadow-md hover:shadow-xl bg-white">
+          <img
+            src="./src/img/queiques/pastel-capucino.png"
+            alt="Bocadillos"
+            class="mb-4 w-full h-48 rounded"
+          />
+          <h3 class="text-xl font-bold">Pastel Capuccino</h3>
+          <p class="text-gray-600 mb-2">
+            Exquisito pastel con sabor a capuccino.
+          </p>
+          <p class="text-gray-800 font-semibold">$40.00</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 place-items-center p-4">
+        <a class="" href="./pages/productos.html">
+          <button class="mt-2 bg-1c1c1c text-white px-4 py-2 rounded">
+            Ver Más
+          </button>
+        </a>
+    </div>
     </section>
 
     <!-- Nuestros Servicios -->
-    <section class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Nuestros Servicios</h2>
-        <details class="mb-4">
-            <summary class="cursor-pointer text-blue-500">Servicio 1</summary>
-            <p class="mt-2 text-gray-600">Descripción del servicio 1.</p>
-        </details>
-        <details>
-            <summary class="cursor-pointer text-blue-500">Servicio 2</summary>
-            <p class="mt-2 text-gray-600">Descripción del servicio 2.</p>
-        </details>
-    </section>
-
-    <!-- Sobre la Marca -->
-    <section class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Sobre Nuestra Marca</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <img src="/src/img/cafe/maquina-cafe-3.png" alt="Sobre la Marca" class="rounded">
-            <p class="text-gray-600">Somos una empresa dedicada a...</p>
+    <section
+      class="max-w-6xl mx-auto p-6"
+      data-aos="fade-down"
+      data-aos-delay="200"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-center">Nuestros Servicios</h2>
+      <p class="text-gray-600 mb-6 text-center">
+        Conoce más acerca de nuestros servicio
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        id="recipe-list"
+      >
+        <div class="bg-white rounded-lg shadow-lg p-4 recipe-card">
+          <h2 class="text-xl text-center font-bold mb-2">
+            Pasteles artesanales
+          </h2>
+          <p class="text-gray-600 mb-4 text-center">
+            Disfruta de nuestros pasteles y cupcakes elaborados con ingredientes frescos y naturales,
+            ofreciendo una variedad de sabores que combinan lo tradicional con lo moderno
+            para satisfacer todos los paladares.
+          </p>
         </div>
-        <a href="./pages/conocenos.html">
-            <button class="mt-4 bg-1c1c1c text-white px-4 py-2 rounded">Saber Más</button>
-        </a>
+        <div class="bg-white rounded-lg shadow-lg p-4 recipe-card">
+          <h2 class="text-xl text-center font-bold mb-2">Bebidas especiales</h2>
+          <p class="text-gray-600 mb-4 text-center">
+            Descubre nuestra selección de café de especialidad y tés seleccionados,
+            donde cada bebida está cuidadosamente elaborada para ofrecerte una experiencia única de sabores y aromas.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 recipe-card">
+          <h2 class="text-xl text-center font-bold mb-2">
+            Opciones saludables
+          </h2>
+          <p class="text-gray-600 mb-4 text-center">
+            Deléitate con nuestros pasteles bajos en azúcar, veganos y sin gluten, 
+            elaborados con ingredientes de alta calidad. 
+            Cada bocado es una deliciosa opción que combina sabor y bienestar,
+            perfecta para disfrutar sin remordimientos
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Sobre la Marca -->
+    <section
+      class="max-w-6xl mx-auto p-6"
+      data-aos="fade-down"
+      data-aos-delay="200"
+    >
+      <h2 class="text-2xl font-bold mb-6 text-center">Sobre Nuestra Marca</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img
+          src="/src/img/cafe/maquina-cafe-3.png"
+          alt="Sobre la Marca"
+          class="rounded"
+        />
+        <div class="grid grid-cols-1">
+          <p class="text-gray-600 p-2 md:h-auto lg:h-0">
+            Somos una tienda de pastelería especializada en ofrecer productos de
+            alta calidad, frescos y con un toque moderno. Nuestra marca se
+            caracteriza por fusionar recetas tradicionales con nuevas
+            tendencias, adaptándose a los gustos de una audiencia joven y
+            dinámica.
+          </p>
+          <p class="text-gray-600 p-2">
+            Queiques es más que una simple cafetería y pastelería. Somos un
+            rincón acogedor donde...
+            <a href="./pages/conocenos.html">
+              <button
+                class="inline-flex items-center rounded-md px-2 py-1 text-xs
+                 font-medium text-white ring-1 ring-inset ring-white bg-1c1c1c"
+              >
+                Saber Más
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Redes Sociales -->
-    <section class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-bold">Síguenos en Redes Sociales</h2>
-        <div class="flex justify-around mt-4">
-            <a href="https://www.facebook.com/profile.php?id=61566851858382" class="bg-1c1c1c text-white px-4 py-2 rounded">Facebook</a>
-            <a href="https://www.instagram.com/queiques.sv/" class="bg-1c1c1c text-white px-4 py-2 rounded">Instagram</a>
-        </div>
+    <section
+      class="max-w-6xl mx-auto p-6"
+      data-aos="fade-down"
+      data-aos-delay="110"
+    >
+      <h2 class="text-2xl font-bold text-center">Síguenos en Redes Sociales</h2>
+      <div class="flex justify-around mt-4">
+        <a
+          href="https://www.facebook.com/profile.php?id=61566851858382"
+          class="bg-1c1c1c text-white px-4 py-2 rounded"
+          >Facebook</a
+        >
+        <a
+          href="https://www.instagram.com/queiques.sv/"
+          class="bg-1c1c1c text-white px-4 py-2 rounded"
+          >Instagram</a
+        >
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-1c1c1c text-white text-center p-4">
-        <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
     </footer>
-</body>
-<script src="../src/js/tawk.js"></script>
-
+  </body>
+  <script src="../src/js/tawk.js"></script>
+  <script>
+    AOS.init({
+      // Inicializa la librería AOS
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </html>
