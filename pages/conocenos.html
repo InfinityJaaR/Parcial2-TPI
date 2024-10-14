@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conocenos</title>
+  <title>Conocenos - Queiques</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="../src/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../src/styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
-<body>
+<body class="bg-gray-100">
   <div id="nav-container"></div>
 
   <script>
@@ -19,19 +21,154 @@
           document.getElementById('nav-container').innerHTML = data;
       });
    </script>
-  <!-- Acerca de Nosotros -->
-  <section class="max-w-6xl mx-auto p-6">
-    <h1 class="text-4xl font-bold mb-4">¿Quiénes Somos?</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <img src="quienes-somos.jpg" alt="Nuestra Historia" class="rounded">
-      <p class="text-gray-600">Somos una empresa dedicada a la venta de productos de calidad...</p>
+
+  <!-- Hero Section -->
+  <section class="relative bg-1c1c1c text-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h1 class="text-5xl font-bold mb-4" data-aos="fade-up">Bienvenidos a Queiques</h1>
+      <p class="text-xl" data-aos="fade-up" data-aos-delay="200">Donde el café se encuentra con la dulzura</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-100 to-transparent"></div>
+  </section>
+
+  <!-- Quiénes Somos -->
+  <section class="max-w-6xl mx-auto p-6 mt-10">
+    <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">¿Quiénes Somos?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <img src="../src/img/cafe/espacio2.png" alt="Interior de Queiques" class="rounded shadow-lg" data-aos="fade-right">
+      <div data-aos="fade-left">
+        <p class="text-gray-600 mb-4">Queiques es más que una simple cafetería y pastelería. Somos un rincón acogedor donde los aromas del café recién molido se mezclan con la dulzura de nuestros pasteles artesanales.</p>
+        <p class="text-gray-600">Fundada con pasión y dedicación, Queiques se ha convertido en el lugar favorito de los amantes del café y los dulces en nuestra comunidad.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Footer (mismo que en index.html) -->
+  <!-- Nuestra Historia -->
+  <section class="bg-gray-200 py-16 mt-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Nuestra Historia</h2>
+      <div class="relative">
+        <div class="absolute top-0 bottom-0 left-1/2 w-1 bg-gray-400"></div>
+        <div class="relative z-10">
+          <div class="flex items-center mb-8" data-aos="fade-right">
+            <div class="bg-1c1c1c text-white rounded-full p-3 shadow-lg">2015</div>
+            <div class="ml-4 bg-white p-4 rounded shadow-lg">
+              <h3 class="font-bold mb-2">El Nacimiento de un Sueño</h3>
+              <p>Queiques abre sus puertas como un pequeño café en el corazón de la ciudad.</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-8 justify-end" data-aos="fade-left">
+            <div class="mr-4 bg-white p-4 rounded shadow-lg">
+              <h3 class="font-bold mb-2">Expansión y Reconocimiento</h3>
+              <p>Nos convertimos en el destino favorito para los amantes del café y los pasteles gourmet.</p>
+            </div>
+            <div class="bg-1c1c1c text-white rounded-full p-3 shadow-lg">2019</div>
+          </div>
+          <div class="flex items-center" data-aos="fade-right">
+            <div class="bg-1c1c1c text-white rounded-full p-3 shadow-lg">2024</div>
+            <div class="ml-4 bg-white p-4 rounded shadow-lg">
+              <h3 class="font-bold mb-2">Un Legado de Sabor</h3>
+              <p>Celebramos nuestra red de cafeterías y nuestro compromiso continuo con la calidad y la innovación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión y Visión -->
+  <section class="max-w-6xl mx-auto p-6 mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-4">Nuestra Misión</h2>
+        <p class="text-gray-600">Ofrecer experiencias únicas a través de nuestro café de especialidad y pasteles artesanales, creando un espacio acogedor donde cada cliente se sienta como en casa.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="text-3xl font-bold mb-4">Nuestra Visión</h2>
+        <p class="text-gray-600">Ser reconocidos como la cafetería y pastelería más innovadora y querida, inspirando momentos de felicidad en cada taza y en cada bocado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuestro Equipo -->
+  <section class="bg-gray-200 py-16 mt-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Nuestro Equipo</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow-lg text-center" data-aos="fade-up">
+          <img src="../src/img/equipo/pastelera.png" alt="María López" class="rounded-full mx-auto mb-4">
+          <h3 class="font-bold mb-2">María López</h3>
+          <p class="text-gray-600">Maestra Pastelera</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
+          <img src="../src/img/equipo/barista.png" alt="Juan Martínez" class="rounded-full mx-auto mb-4">
+          <h3 class="font-bold mb-2">Juan Martínez</h3>
+          <p class="text-gray-600">Barista Jefe</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
+          <img src="../src/img/equipo/Gerente.png" alt="Sofía Ramírez" class="rounded-full mx-auto mb-4">
+          <h3 class="font-bold mb-2">Sofía Ramírez</h3>
+          <p class="text-gray-600">Gerente de Atención al Cliente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Un Lugar Para Todos -->
+  <section class="max-w-6xl mx-auto p-6 mt-10">
+    <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Un Lugar Para Todos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div data-aos="fade-right">
+        <p class="text-gray-600 mb-4">En Queiques, creemos que la diversidad enriquece nuestra comunidad. Nuestro espacio está diseñado para ser acogedor para todos, sin importar su origen, edad o estilo de vida.</p>
+        <p class="text-gray-600">Ofrecemos opciones para todos los gustos y necesidades dietéticas, incluyendo alternativas veganas, sin gluten y bajas en azúcar.</p>
+      </div>
+      <img src="../src/img/equipo/clientes.jpg" alt="Clientes diversos en Queiques" class="rounded shadow-lg" data-aos="fade-left">
+    </div>
+  </section>
+
+  <!-- Nuestro Compromiso -->
+  <section class="bg-gray-200 py-16 mt-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Nuestro Compromiso</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up">
+          <h3 class="font-bold mb-2">Calidad Suprema</h3>
+          <p class="text-gray-600">Utilizamos solo los mejores granos de café y los ingredientes más frescos en nuestros pasteles, garantizando una experiencia culinaria excepcional.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="font-bold mb-2">Sostenibilidad</h3>
+          <p class="text-gray-600">Nos esforzamos por reducir nuestro impacto ambiental utilizando empaques biodegradables y apoyando a productores locales y sostenibles.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="font-bold mb-2">Innovación Constante</h3>
+          <p class="text-gray-600">Siempre estamos experimentando con nuevos sabores y técnicas para sorprender y deleitar a nuestros clientes con creaciones únicas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ven a Conocernos -->
+  <section class="max-w-6xl mx-auto p-6 mt-10 mb-20">
+    <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Ven a Conocernos</h2>
+    <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up">
+      <p class="text-gray-600 mb-4 text-center">Te invitamos a vivir la experiencia Queiques. Ven y descubre por qué somos más que una simple cafetería.</p>
+      <div class="text-center">
+        <a class="bg-1c1c1c text-white px-6 py-3 rounded hover:bg-gray-800 transition duration-300" href="./contactanos.html">Encuentra tu Queiques más cercano</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="bg-1c1c1c text-white text-center p-4">
-    <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Queiques. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="../src/js/tawk.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
-<script src="../src/js/tawk.js"></script>
 </html>
