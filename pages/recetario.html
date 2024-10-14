@@ -19,7 +19,7 @@
   <!-- Navbar -->
   <div id="nav-container"></div>
   <script>
-    fetch('.././src/nav.html')
+    fetch('../src/nav.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('nav-container').innerHTML = data;
@@ -52,6 +52,10 @@
 
    <!-- Vincula el archivo JS externo -->
    <script src="../src/js/recetas.js"></script>
+   <!--Script de nav-->
+  <script src="../src/js/navReponsive.js"></script>
+  <!--Script de chat-->
+  <script src="src/js/tawk.js"></script>
 
 </body>
 

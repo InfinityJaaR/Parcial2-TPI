@@ -37,7 +37,7 @@
     <div id="nav-container"></div>
 
     <script>
-      fetch("./src/nav.html")
+      fetch("src/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-container").innerHTML = data;
@@ -222,7 +222,11 @@
       <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
     </footer>
   </body>
-  <script src="../src/js/tawk.js"></script>
+  <!-- Vincula el archivo JS externo -->
+   <!--Script de chat-->
+  <script src="src/js/tawk.js"></script>
+  <!--Script de nav-->
+  <script src="src/js/navReponsive.js"></script>
   <script>
     AOS.init({
       // Inicializa la librería AOS
