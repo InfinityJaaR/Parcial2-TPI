@@ -15,3 +15,10 @@ p{
 h1, h2, h3 h4, h5,h6, summary{
    font-family: "Raleway", sans-serif;
 }
+.nav-containe {
+    background-color: #1c1c1c; /* Color de fondo */
+    padding: 1rem; /* Espaciado */
+    z-index: 10; /* Asegúrate de que esté encima de otros elementos */
+    position: sticky; /* Hace que el nav se quede fijo en la parte superior */
+    top: 0; /* Posición en la parte superior */
+}
