@@ -1,0 +1,7 @@
+# Bloquear todos los rastreadores de la carpeta src
+User-agent: *
+Disallow: /src/
+
+# Permitir todos los rastreadores en la carpeta pages
+User-agent: *
+Allow: /pages/
