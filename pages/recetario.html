@@ -7,6 +7,22 @@
   <meta name="keywords" content="recetas, pasteles, postres, recetas fáciles, dulces">
   <meta name="author" content="Queiques">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Encuentra deliciosas recetas en nuestro sitio web.">
+  <meta name="twitter:description" content="Elige entre un enorme catálogo de recetas que Queiques te ofrece.">
+  <meta name="twitter:image" content="../src/img/banner.png">
+  <meta name="twitter:site" content="@queiques_sv">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Recetas | Queiques">
+  <meta property="og:description" content="Explora nuestra variedad de productos, desde pasteles y dulces hasta café gourmet. ¡Visítanos y disfruta!">
+  <meta property="og:image" content="../src/img/banner.png">
+  <meta property="og:url" content="https://queiques.store/">
+  <meta property="og:site_name" content="Queiques">
+
   <link rel="shortcut icon" href="../src/img/favicon.png" type="image/x-icon">
   <title>Queiques</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -22,7 +38,7 @@
   <!-- Navbar -->
   <div id="nav-container"></div>
   <script>
-    fetch('.././src/nav.html')
+    fetch('../src/nav.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('nav-container').innerHTML = data;
@@ -55,6 +71,10 @@
 
    <!-- Vincula el archivo JS externo -->
    <script src="../src/js/recetas.js"></script>
+   <!--Script de nav-->
+  <script src="../src/js/navReponsive.js"></script>
+  <!--Script de chat-->
+  <script src="src/js/tawk.js"></script>
 
 </body>
 

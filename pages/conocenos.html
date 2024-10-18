@@ -14,17 +14,37 @@
   <!-- Meta Robots Tag -->
   <meta name="robots" content="index, follow">
   
+  <!--Meta tags del sitio-->
+  <meta name="description" content="Más que café, somos una familia dedicada a brindar calidez y sabor.">
+  <meta name="keywords" content="Cafetería, Pastelería, Postres, Panes, Café, Dulces, Productos">
+  <meta name="author" content="Equipo Nexus (Equipo 06)">
+
+  <!--Meta tags de Twitter-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Conoce más acerca de Queiques, tu cafetería preferida">
+  <meta name="twitter:description" content="Conoce la historia de Queiques, su misión y visión">
+  <meta name="twitter:image" content="../src/img/banner.png">
+  <meta name="twitter:site" content="@queiques_sv">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Conócenos | Queiques">
+  <meta property="og:description"
+    content="Explora nuestra variedad de productos, desde pasteles y dulces hasta café gourmet. ¡Visítanos y disfruta!">
+  <meta property="og:image" content="../src/img/banner.png">
+  <meta property="og:url" content="https://queiques.store/">
+  <meta property="og:site_name" content="Queiques">
 </head>
+
 <body class="bg-gray-100">
   <div id="nav-container"></div>
-
   <script>
-      fetch('.././src/nav.html')
+    fetch('.././src/nav.html')
       .then(response => response.text())
       .then(data => {
-          document.getElementById('nav-container').innerHTML = data;
+        document.getElementById('nav-container').innerHTML = data;
       });
-   </script>
+  </script>
 
   <!-- Hero Section -->
   <section class="relative bg-1c1c1c text-white py-20">
@@ -39,10 +59,13 @@
   <section class="max-w-6xl mx-auto p-6 mt-10">
     <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">¿Quiénes Somos?</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-      <img src="../src/img/cafe/espacio2.png" alt="Interior de Queiques" class="rounded shadow-lg" data-aos="fade-right">
+      <img src="../src/img/cafe/espacio2.png" alt="Interior de Queiques" class="rounded shadow-lg"
+        data-aos="fade-right">
       <div data-aos="fade-left">
-        <p class="text-gray-600 mb-4">Queiques es más que una simple cafetería y pastelería. Somos un rincón acogedor donde los aromas del café recién molido se mezclan con la dulzura de nuestros pasteles artesanales.</p>
-        <p class="text-gray-600">Fundada con pasión y dedicación, Queiques se ha convertido en el lugar favorito de los amantes del café y los dulces en nuestra comunidad.</p>
+        <p class="text-gray-600 mb-4">Queiques es más que una simple cafetería y pastelería. Somos un rincón acogedor
+          donde los aromas del café recién molido se mezclan con la dulzura de nuestros pasteles artesanales.</p>
+        <p class="text-gray-600">Fundada con pasión y dedicación, Queiques se ha convertido en el lugar favorito de los
+          amantes del café y los dulces en nuestra comunidad.</p>
       </div>
     </div>
   </section>
@@ -85,11 +108,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up">
         <h2 class="text-3xl font-bold mb-4">Nuestra Misión</h2>
-        <p class="text-gray-600">Ofrecer experiencias únicas a través de nuestro café de especialidad y pasteles artesanales, creando un espacio acogedor donde cada cliente se sienta como en casa.</p>
+        <p class="text-gray-600">Ofrecer experiencias únicas a través de nuestro café de especialidad y pasteles
+          artesanales, creando un espacio acogedor donde cada cliente se sienta como en casa.</p>
       </div>
       <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up" data-aos-delay="200">
         <h2 class="text-3xl font-bold mb-4">Nuestra Visión</h2>
-        <p class="text-gray-600">Ser reconocidos como la cafetería y pastelería más innovadora y querida, inspirando momentos de felicidad en cada taza y en cada bocado.</p>
+        <p class="text-gray-600">Ser reconocidos como la cafetería y pastelería más innovadora y querida, inspirando
+          momentos de felicidad en cada taza y en cada bocado.</p>
       </div>
     </div>
   </section>
@@ -123,10 +148,13 @@
     <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Un Lugar Para Todos</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
       <div data-aos="fade-right">
-        <p class="text-gray-600 mb-4">En Queiques, creemos que la diversidad enriquece nuestra comunidad. Nuestro espacio está diseñado para ser acogedor para todos, sin importar su origen, edad o estilo de vida.</p>
-        <p class="text-gray-600">Ofrecemos opciones para todos los gustos y necesidades dietéticas, incluyendo alternativas veganas, sin gluten y bajas en azúcar.</p>
+        <p class="text-gray-600 mb-4">En Queiques, creemos que la diversidad enriquece nuestra comunidad. Nuestro
+          espacio está diseñado para ser acogedor para todos, sin importar su origen, edad o estilo de vida.</p>
+        <p class="text-gray-600">Ofrecemos opciones para todos los gustos y necesidades dietéticas, incluyendo
+          alternativas veganas, sin gluten y bajas en azúcar.</p>
       </div>
-      <img src="../src/img/equipo/clientes.jpg" alt="Clientes diversos en Queiques" class="rounded shadow-lg" data-aos="fade-left">
+      <img src="../src/img/equipo/clientes.jpg" alt="Clientes diversos en Queiques" class="rounded shadow-lg"
+        data-aos="fade-left">
     </div>
   </section>
 
@@ -137,15 +165,18 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up">
           <h3 class="font-bold mb-2">Calidad Suprema</h3>
-          <p class="text-gray-600">Utilizamos solo los mejores granos de café y los ingredientes más frescos en nuestros pasteles, garantizando una experiencia culinaria excepcional.</p>
+          <p class="text-gray-600">Utilizamos solo los mejores granos de café y los ingredientes más frescos en nuestros
+            pasteles, garantizando una experiencia culinaria excepcional.</p>
         </div>
         <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up" data-aos-delay="100">
           <h3 class="font-bold mb-2">Sostenibilidad</h3>
-          <p class="text-gray-600">Nos esforzamos por reducir nuestro impacto ambiental utilizando empaques biodegradables y apoyando a productores locales y sostenibles.</p>
+          <p class="text-gray-600">Nos esforzamos por reducir nuestro impacto ambiental utilizando empaques
+            biodegradables y apoyando a productores locales y sostenibles.</p>
         </div>
         <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up" data-aos-delay="200">
           <h3 class="font-bold mb-2">Innovación Constante</h3>
-          <p class="text-gray-600">Siempre estamos experimentando con nuevos sabores y técnicas para sorprender y deleitar a nuestros clientes con creaciones únicas.</p>
+          <p class="text-gray-600">Siempre estamos experimentando con nuevos sabores y técnicas para sorprender y
+            deleitar a nuestros clientes con creaciones únicas.</p>
         </div>
       </div>
     </div>
@@ -155,9 +186,11 @@
   <section class="max-w-6xl mx-auto p-6 mt-10 mb-20">
     <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Ven a Conocernos</h2>
     <div class="bg-white p-6 rounded shadow-lg" data-aos="fade-up">
-      <p class="text-gray-600 mb-4 text-center">Te invitamos a vivir la experiencia Queiques. Ven y descubre por qué somos más que una simple cafetería.</p>
+      <p class="text-gray-600 mb-4 text-center">Te invitamos a vivir la experiencia Queiques. Ven y descubre por qué
+        somos más que una simple cafetería.</p>
       <div class="text-center">
-        <a class="bg-1c1c1c text-white px-6 py-3 rounded hover:bg-gray-800 transition duration-300" href="./contactanos.html">Encuentra tu Queiques más cercano</a>
+        <a class="bg-1c1c1c text-white px-6 py-3 rounded hover:bg-gray-800 transition duration-300"
+          href="./contactanos.html">Encuentra tu Queiques más cercano</a>
       </div>
     </div>
   </section>
@@ -168,6 +201,7 @@
   </footer>
 
   <script src="../src/js/tawk.js"></script>
+  <Script src="../src/js/navReponsive.js"></Script>
   <script>
     AOS.init({
       duration: 1000,
@@ -175,4 +209,5 @@
     });
   </script>
 </body>
+
 </html>
